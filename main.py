@@ -50,7 +50,7 @@ async def texthandler(m: types.Message, state: FSMContext):
                 now = datetime.now()
                 timed_out = await set_timer(now, end_time)
                 if last_length >= 5 or timed_out:
-                    await m.answer('Лимиты этой почты закончились. ⌛️ \nСпасибо за использование! 👍 \n\nСказать '
+                    await m.answer('Лимиты этой почты закончились. ⌛️ \nСпасибо за то, что вы с нами! 👍 \n\nСказать '
                                    'спасибо 👉 <a href="https://www.donationalerts.com/r/phantom_donat">Донат</a> '
                                    '\n\nНажмите на кнопу ниже, чтобы получить новую временную '
                                    'почту 👇', reply_markup=kb.menu, parse_mode='HTML')
